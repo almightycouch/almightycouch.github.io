@@ -3,6 +3,11 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
+@mixin aliased {
+   -webkit-font-smoothing: initial;
+   -moz-osx-font-smoothing: initial;
+}
+
 @font-face {
   font-family: DINWeb;
   font-style: normal;
@@ -211,4 +216,101 @@
   font-style: italic;
   font-weight: 900;
   src: url(../fonts/calluna-sans-black-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/freight-text-pro-light.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: italic;
+  font-weight: 300;
+  src: url(../fonts/freight-text-pro-light-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/freight-text-pro-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/freight-text-pro-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/freight-text-pro-medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: italic;
+  font-weight: 500;
+  src: url(../fonts/freight-text-pro-medium-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/freight-text-pro-bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/freight-text-pro-bold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/freight-text-pro-black.woff) format("woff");
+}
+
+@font-face {
+  font-family: freight-text-pro;
+  font-style: italic;
+  font-weight: 900;
+  src: url(../fonts/freight-text-pro-black-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: courier-prime;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/courier-prime-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: courier-prime;
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/courier-prime-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: courier-prime;
+  font-weight: 700;
+  src: url(../fonts/courier-prime-bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: courier-prime;
+  font-weight: 700;
+  font-style: italic;
+  src: url(../fonts/courier-prime-bold-italic.woff) format("woff");
 }

@@ -1,11 +1,14 @@
 var nav = document.querySelector("nav");
-var sticky = { element: nav,
+var sticky = {
+  element: nav,
   offset: nav.offsetTop,
   init: function() {
-    this.navmenu = this.element.querySelector("ul[role=navigation]");
-    this.parent = nav.parentElement;
-    this.scroll();
-    this.listen();
+    if(!this.element.classList.contains("sticky")) {
+      this.navmenu = this.element.querySelector("ul[role=navigation]");
+      this.parent = nav.parentElement;
+      this.scroll();
+      this.listen();
+    }
   },
 
   scroll: function() {
@@ -25,8 +28,7 @@ var sticky = { element: nav,
     this.navmenu.querySelectorAll("li").forEach(function(menuItem) {
       var href = menuItem.querySelector("a").getAttribute("href");
       var innerPos = href.indexOf("#");
-      if(innerPos != -1) {
-        console.log(href.substring(innerPos));
+      if(innerPos == 0) {
         var target = document.querySelector(href.substring(innerPos));
         if(target != null) {
           var offset = window.scrollY + window.innerHeight;

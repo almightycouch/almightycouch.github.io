@@ -1,4 +1,4 @@
-<header>
+<header {% if layout.skip-hero %}class="placeholder"{% endif %}>
   {% unless layout.skip-hero %}
   <section class="hero">
     <figure>
@@ -7,16 +7,16 @@
     </figure>
   </section>
   {% endunless %}
-  <nav>
+  <nav {% if layout.skip-hero %}class="sticky"{% endif %}>
     <a href="/" class="logo">
       <img src="/assets/img/logo-navbar.svg" alt="Logo" />
     </a>
     <div class="navbar">
       <ul role="navigation">
-        <li><a href="/#intro">Home</a></li>
-        <li><a href="/#process">Process</a></li>
-        <li><a href="/#work">Work</a></li>
-        <li><a href="/#contact">Contact</a></li>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>

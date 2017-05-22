@@ -2,3 +2,38 @@
 @import "typography";
 @import "header";
 @import "wrapper";
+
+body {
+    margin: 0;
+    font: 14px $font-family-sans;
+    color: $color-base;
+    background-color: white;
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-link;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-sans-condensed;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+hr {
+  height: 0;
+  margin: 60px 0 80px 0;
+  border: solid #ddd;
+  border-width: 0 0 1px;
+  clear: both;
+}

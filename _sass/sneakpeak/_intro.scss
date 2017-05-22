@@ -1,10 +1,38 @@
-$large-screen-grid: (
-  media: $large-screen-size
-);
+section.sneakpeek {
+  h1 {
+    margin: 0 0 20px;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 72px;
+    text-align: center;
+  }
 
-$medium-screen-grid: (
-  media: $medium-screen-size
-);
+  h2 {
+    margin: 30px 0 15px;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: .25px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+    letter-spacing: .25px;
+    line-height: 32px;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: .25px;
+  }
+
+  p {
+    font-weight: 300;
+    text-align: justify;
+  }
+}
 
 section#intro {
   @include grid-container;
@@ -23,6 +51,7 @@ section#intro {
         float: right;
         width: 150px;
         height: auto;
+        margin-top: 5px;
         margin-left: 35px;
       }
     }
@@ -30,7 +59,8 @@ section#intro {
 
   @include grid-media($medium-screen-grid) {
     article {
-      padding: 0 10%;
+      width: 720px;
+      margin: 0 auto;
     }
   }
 
@@ -56,6 +86,9 @@ section#intro {
 
   aside {
     display: none;
+    p {
+      @include antialiased;
+    }
   }
 
   @include grid-media($large-screen-grid) {
@@ -72,7 +105,7 @@ section#intro {
           margin-left: -10px;
           padding-top: 3px;
           padding-left: 35px;
-          background: image_url("../img/intro-timeline-dot.png") no-repeat left 10px;
+          background: url("../img/intro-timeline-dot.png") no-repeat left 10px;
           background-size: 15px 15px;
           font-weight: 500;
           font-size: 12px;
@@ -82,7 +115,7 @@ section#intro {
 
           &:hover {
             color: $color-link;
-            background-image: image_url("../img/intro-timeline-dot-active.png");
+            background-image: url("../img/intro-timeline-dot-active.png");
           }
 
           p {

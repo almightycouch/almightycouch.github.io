@@ -1,6 +1,11 @@
 body > header {
   background-color: $color-alt;
 
+  &.placeholder {
+    height: 60px;
+    background-color: white;
+  }
+
   section.hero {
     height: 100vh;
     justify-content: center;
@@ -30,7 +35,7 @@ body > header {
     padding: 0 10px;
 
     .logo img {
-      margin-left: -120px;
+      margin-left: -100px;
       transition: margin-left 0;
       float: left;
       height: 40px;
@@ -69,7 +74,7 @@ body > header {
     }
 
     .navbar {
-      margin-left: 120px;
+      margin-left: 100px;
       margin-right: 10px;
 
       ul {

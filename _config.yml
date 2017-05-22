@@ -13,7 +13,14 @@ permalink: /blog/:title
 # Markdown engine
 markdown: kramdown
 
-# Code highlightning engine
+# Kramdown options
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Code highlighting engine
 highlighter: rouge
 
 # Excluded files
