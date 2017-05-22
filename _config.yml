@@ -16,19 +16,6 @@ markdown: kramdown
 # Code highlightning engine
 highlighter: rouge
 
-# Assets pipline
-assets:
-  sources:
-    - _assets/fonts
-    - _assets/images
-
-# Dependencies
-gems:
-  - bourbon
-  - neat
-  - jekyll-assets
-  - jekyll-feed
-
 # Excluded files
 exclude:
   - Gemfile

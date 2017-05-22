@@ -1,0 +1,214 @@
+@mixin antialiased {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/dinweb-light.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: italic;
+  font-weight: 300;
+  src: url(../fonts/dinweb-light-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/dinweb-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/dinweb-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/dinweb-medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: italic;
+  font-weight: 500;
+  src: url(../fonts/dinweb-medium-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/dinweb-bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/dinweb-bold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/dinweb-black.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb;
+  font-style: italic;
+  font-weight: 900;
+  src: url(../fonts/dinweb-black-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/dinweb-cond-light.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: italic;
+  font-weight: 300;
+  src: url(../fonts/dinweb-cond-light-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/dinweb-cond-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/dinweb-cond-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/dinweb-cond-medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: italic;
+  font-weight: 500;
+  src: url(../fonts/dinweb-cond-medium-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/dinweb-cond-bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/dinweb-cond-bold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/dinweb-cond-black.woff) format("woff");
+}
+
+@font-face {
+  font-family: DINWeb-Cond;
+  font-style: italic;
+  font-weight: 900;
+  src: url(../fonts/dinweb-cond-black-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/calluna-sans-light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url(../fonts/calluna-sans-light-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/calluna-sans-regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/calluna-sans-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/calluna-sans-medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url(../fonts/calluna-sans-medium-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/calluna-sans-bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/calluna-sans-bold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/calluna-sans-black.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  font-style: italic;
+  font-weight: 900;
+  src: url(../fonts/calluna-sans-black-italic.woff) format("woff");
+}
