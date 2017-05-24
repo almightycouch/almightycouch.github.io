@@ -63,7 +63,7 @@ body > header {
         &.active {
           border-color: $color-alt;
           a {
-            color: $color-link;
+            color: $color-active;
           }
         }
       }
