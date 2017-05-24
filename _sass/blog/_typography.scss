@@ -1,0 +1,26 @@
+.blog {
+  padding: 0 60px;
+  @include grid-media($medium-screen-grid) { padding: 0 60px; }
+  @include grid-media($large-screen-grid) { padding: 0 120px; }
+
+  .meta {
+    font-family: $font-family-freight;
+    color: $color-base2;
+
+    a.author {
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    time {
+      font-family: $font-family-sans-alt;
+
+      &:before {
+        margin: 0 0.6rem;
+        content: "–";
+        display: inline;
+      }
+    }
+  }
+}
+

@@ -1,9 +1,4 @@
 article.post {
-  padding: 0 60px;
-
-  @include grid-media($medium-screen-grid) { padding: 0 60px; }
-  @include grid-media($large-screen-grid) { padding: 0 120px; }
-
   section.header {
     margin-top: 60px;
     text-align: center;
@@ -11,31 +6,16 @@ article.post {
     h1 {
       margin: 0;
       font-size: 60px;
-      line-height: 65px;
+      line-height: 64px;
     }
 
     p.meta {
-      font-size: 18px;
-      line-height: 34px;
-      letter-spacing: 0.2px;
-
-      span {
-        padding-right: 4px;
-
-        &.author {
-          color: $color-active;
-          font-weight: 500;
-          text-transform: uppercase;
-        }
-
-        &.date {
-          text-transform: uppercase;
-        }
-      }
+      font-size: 24px;
+      line-height: 32px;
     }
 
     hr {
-      margin: 60px 0 80px 0;
+      margin: 30px 0 60px 0;
     }
   }
 

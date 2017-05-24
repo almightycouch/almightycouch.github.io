@@ -6,9 +6,8 @@ layout: blog
   <section class="header">
     <h1>{{ page.title }}</h1>
     <p class="meta">
-      <span>by</span>
-      <span class="author">{{ page.author }}</span>
-      <span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
+      <a href="{{ page.author_href }}" class="author">{{ page.author }}</a>
+      <time>{{ page.date | date: "%b %-d, %Y" }}</time>
     </p>
     <hr />
   </section>

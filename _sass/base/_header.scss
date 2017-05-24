@@ -45,8 +45,7 @@ body > header {
     &.sticky {
       position: fixed;
       z-index: 100;
-      top: 0;
-      width: 100%;
+      top: 0; left: 0; right: 0;
       box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
       background-color: rgba(255, 255, 255, 0.9);
 
@@ -55,17 +54,23 @@ body > header {
         transition: margin-left 0.4s;
       }
 
-      .navbar ul li {
-        a {
-          color: $color-base;
+      .navbar ul {
+        li {
+          a {
+            color: $color-base;
+          }
         }
 
-        &.active {
+        &[role=navigation] li.active {
           border-color: $color-alt;
           a {
             color: $color-active;
           }
         }
+        &.shortcuts li a i {
+          background-color: $color-base;
+        }
+
       }
 
       &.opaque {
@@ -86,19 +91,49 @@ body > header {
           display: inline-block;
           height: 55px;
           padding: 0 10px;
+          font-family: $font-family-sans-alt;
+          font-weight: 500;
+          text-transform: uppercase;
 
           a {
             line-height: 60px;
             color: white;
-            font-family: $font-family-sans-alt;
             letter-spacing: 2px;
-            text-transform: uppercase;
           }
+        }
 
-          &.active {
-            font-weight: 900;
-            padding-right: 9px;
-            border-bottom: 5px solid white;
+        &[role=navigation] li.active {
+          font-weight: 900;
+          border-bottom: 5px solid white;
+        }
+
+        &.shortcuts {
+          float: right;
+
+          li {
+            position: relative;
+
+            a i {
+              display: inline-block;
+              width: 30px; height: 30px;
+              margin: 15px 0 15px 0;
+              background-color: white;
+
+              &.icon-blog {
+                -webkit-mask-image: url("/assets/img/icon-blog.svg");
+                -webkit-mask-size: 30px;
+              }
+              &.icon-github {
+                -webkit-mask-image: url("/assets/img/icon-github.svg");
+                -webkit-mask-size: 30px;
+              }
+            }
+
+            &.active {
+              a i {
+                background-color: $color-alt2;
+              }
+            }
           }
         }
       }

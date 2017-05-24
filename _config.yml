@@ -7,6 +7,12 @@ description: >
   We specialize in desktop and mobile application development with work expanding to websites,
   user interfaces and marketing material for clients of all sizes on every development platform.
 
+shortcuts:
+  - icon: blog
+    href: /blog/
+  - icon: github
+    href: https://github.com/almightycouch
+
 # Permalink for blog posts
 permalink: /blog/:title
 

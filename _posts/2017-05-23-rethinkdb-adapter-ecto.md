@@ -2,7 +2,8 @@
 layout: post
 title: Elixir Ecto adapter for RethinkDB
 author: Mario Flach
-date: 2017-03-23 11:06:14 +0100
+author_href: http://github.com/redrabbit
+date: 2017-05-23 11:06:14 +0100
 ---
 
 The past couple of day, I have been working on a new adapter for [Ecto][], the database abstraction framework for [Elixir][]. Today, I’d like to share what I experienced so far.

@@ -2,10 +2,13 @@
 layout: blog
 title: Blog
 ---
-
-<h1>Blog</h1>
-
+<ul class="posts">
 {% for post in site.posts %}
-		<time>{{ post.date | date: "%b %-d, %Y" }}</time>
-		<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+  <li>
+    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <p class="meta">
+      <a href="{{ post.author_href }}" class="author">{{ post.author }}</a>
+      <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+    </p>
 {% endfor %}
+</ul>

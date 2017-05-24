@@ -12,11 +12,18 @@
       <img src="/assets/img/logo-navbar.svg" alt="Logo" />
     </a>
     <div class="navbar">
+      <ul class="shortcuts">
+        {% for link in site.shortcuts %}
+          {% assign size = link.href | size %}
+          {% assign base = page.url | slice: 0, size %}
+          <li{% if link.href == base %} class="active"{% endif %}><a href="{{ link.href }}"><i class="icon-{{ link.icon }}"></i></a></li>
+        {% endfor %}
+      </ul>
       <ul role="navigation">
-        <li><a href="#intro">Home</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/#intro">Home</a></li>
+        <li><a href="/#process">Process</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
     </div>
   </nav>

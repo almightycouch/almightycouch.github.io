@@ -1,0 +1,25 @@
+ul.posts {
+  margin: 60px 0 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+
+    h2 {
+      font-size: 48px;
+      margin: 20px 0 0;
+      a {
+        color: $color-base;
+      }
+    }
+
+    p.meta {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}

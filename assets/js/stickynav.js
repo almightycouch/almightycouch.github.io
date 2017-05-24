@@ -28,7 +28,7 @@ var sticky = {
     this.navmenu.querySelectorAll("li").forEach(function(menuItem) {
       var href = menuItem.querySelector("a").getAttribute("href");
       var innerPos = href.indexOf("#");
-      if(innerPos == 0) {
+      if(innerPos != -1) {
         var target = document.querySelector(href.substring(innerPos));
         if(target != null) {
           var offset = window.scrollY + window.innerHeight;
