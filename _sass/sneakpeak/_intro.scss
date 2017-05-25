@@ -104,11 +104,10 @@ section#intro {
 
         &:before {
           position: absolute;
-          left: -16px; top: -28px;
-          content: "\f017";
-          color: $color-alt2;
-          font-family: FontAwesome;
-          font-size: 32px;
+          width: 60px; height: 60px;
+          top: -60px; left: -50px;
+          content: "";
+          background-image: url("/assets/img/intro-timeline-history.svg");
         }
       }
 
