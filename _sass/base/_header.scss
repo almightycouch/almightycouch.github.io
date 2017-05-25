@@ -1,30 +1,46 @@
 body > header {
-  background-color: $color-alt;
+  background: url(/assets/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
 
   &.placeholder {
     height: 60px;
-    background-color: white;
+    background: white;
   }
 
   section.hero {
-    height: 100vh;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    position: relative;
+    height: 100vmin;
     margin-bottom: -60px;
+    background: linear-gradient(160deg, rgba(40, 192, 235, 0.9), rgba(9, 128, 171, 0.6));
 
     figure {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 5px;
+      margin: 0;
+      @include grid-media($medium-screen-grid) {
+        background-image: url(/assets/img/hero-teaser.svg);
+        background-size: 2760px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
 
       img {
-        width: 80%;
+        width: 220px;
         height: auto;
       }
 
       figcaption {
+        font-family: "Alex Brush";
+        font-size: 80px;
         color: white;
         text-align: center;
-        display: none;
       }
     }
   }
@@ -120,11 +136,11 @@ body > header {
               background-color: white;
 
               &.icon-blog {
-                -webkit-mask-image: url("/assets/img/icon-blog.svg");
+                -webkit-mask-image: url(/assets/img/icon-blog.svg);
                 -webkit-mask-size: 30px;
               }
               &.icon-github {
-                -webkit-mask-image: url("/assets/img/icon-github.svg");
+                -webkit-mask-image: url(/assets/img/icon-github.svg);
                 -webkit-mask-size: 30px;
               }
             }
