@@ -42,7 +42,7 @@ article.post {
     h1 {
       padding-top: 48px;
       font-size: 32px;
-      line-height: 32px;
+      line-height: 40px;
       &:before {
         content: "#";
       }
@@ -68,6 +68,8 @@ article.post {
 
     img {
       display: block;
+      max-width:100%;
+      padding: 30px 0;
       margin-left: auto;
       margin-right: auto;
     }
@@ -103,6 +105,7 @@ article.post {
     .highlight {
       margin-left: -50px;
       border: 1px solid $color-alt2;
+      overflow-y: hidden;
 
       table {
         width: 100%;
