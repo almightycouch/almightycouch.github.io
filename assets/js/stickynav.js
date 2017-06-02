@@ -6,6 +6,7 @@ var sticky = {
     if(!this.element.classList.contains("sticky")) {
       this.navmenu = this.element.querySelector("ul[role=navigation]");
       this.parent = nav.parentElement;
+      this.figure = this.parent.querySelector("figure");
       this.scroll();
       this.listen();
     }
@@ -24,6 +25,7 @@ var sticky = {
       this.element.classList.remove("sticky");
       this.element.classList.remove("opaque");
       this.parent.style["marginBottom"] = "0";
+      this.figure.style.backgroundPosition = "center -" + window.scrollY * 1.25 + "px";
     }
     this.navmenu.querySelectorAll("li").forEach(function(menuItem) {
       var href = menuItem.querySelector("a").getAttribute("href");

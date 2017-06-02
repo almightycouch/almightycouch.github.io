@@ -1,5 +1,5 @@
 body > header {
-  background: url(/assets/img/hero.jpg);
+  background: $color-active;
   background-size: cover;
   background-position: center;
 
@@ -12,12 +12,19 @@ body > header {
     position: relative;
     height: 100vmin;
     margin-bottom: -60px;
-    background: linear-gradient(160deg, rgba(40, 192, 235, 0.9), rgba(9, 128, 171, 0.6));
+    background: linear-gradient(160deg, rgba(36, 174, 214, 0.9), rgba(9, 128, 171, 0.6));
 
     figure {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 5px;
       margin: 0;
+      @include grid-media($medium-screen-grid) {
+        background-image: url(/assets/img/hero-teaser.svg);
+        background-size: 2760px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
       justify-content: center;
       display: flex;
       flex-direction: column;
