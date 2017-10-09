@@ -26,6 +26,13 @@ section#intro {
     p {
       @include antialiased;
     }
+
+    &:last-child {
+      p {
+        margin-bottom: 0;
+        padding-bottom: 60px;
+      }
+    }
   }
 
   @include grid-media($medium-screen-grid) {
