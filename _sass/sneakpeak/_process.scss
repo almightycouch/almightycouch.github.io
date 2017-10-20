@@ -1,9 +1,11 @@
 section#process {
   @include grid-container;
 
+  height: 100vh;
+
   .vidcontainer {
     position: absolute;
-    width: 100%; height: 100vh;
+    width: 100%; height: 100%;
     left: 0; right: 0;
     background-image: url(../img/process-bg.jpg);
     background-size: cover;

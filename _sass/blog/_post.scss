@@ -24,8 +24,7 @@ article.post {
       position: relative;
       margin: 0;
       padding-bottom: 8px;
-      font-family: $font-family-sans;
-      font-weight: 700;
+      font-family: $font-family-freight;
       color: $color-base2;
       letter-spacing: 0;
       text-transform: none;
@@ -42,27 +41,39 @@ article.post {
     h1 {
       padding-top: 48px;
       font-size: 32px;
+      font-weight: 700;
+      letter-spacing: .8px;
       line-height: 40px;
       &:before {
         content: "#";
+        font-family: $font-family-sans;
       }
     }
 
     h2 {
       padding-top: 32px;
       font-size: 22px;
+      font-weight: 900;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 1px;
       line-height: 32px;
       &:before {
         content: "##";
+        font-weight: 700;
+        font-family: $font-family-sans;
       }
     }
 
     h3 {
       padding-top: 8px;
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: .8px;
       line-height: 24px;
       &:before {
         content: "###";
+        font-weight: 700;
+        font-family: $font-family-sans;
       }
     }
 
@@ -89,10 +100,19 @@ article.post {
       }
     }
 
+    ol {
+      padding-left: 24px;
+    }
+
     blockquote {
-      margin: 15px 0 15px -50px;
-      padding-left: 45px;
+      margin: 15px 0 15px -30px;
+      padding-left: 25px;
       border-left: 5px solid $color-alt2;
+
+      p {
+        color: #939ca3;
+        font-weight: 500;
+      }
     }
 
     .highlighter-rouge {
