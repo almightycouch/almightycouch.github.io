@@ -3,7 +3,7 @@ layout: default
 title: Hello
 ---
 
-<section class="sneakpeek" id="intro">
+<section class="sneakpeek" id="services">
   <aside>
     <ul>
       <li>March 1989<p>The W3 begins as a CERN project</p></li>
@@ -19,6 +19,7 @@ title: Hello
       We specialize in desktop and mobile application development with work expanding to websites, user interfaces and marketing material for clients of all sizes on every development platform.</p>
     <p>We are creative, passionate and vastly knowledgeable, which reflects in the attention to detail in our products. We are motivated every day to raise the bar in the work we create.</p>
     <p>Whether it's creating your app from scratch or consulting for your product, we have the skill to help you make your next project great.</p>
+    {% include services-launch-icon.svg %}
   </article>
   <aside>
     <ul>
@@ -30,18 +31,18 @@ title: Hello
   <article>
     <h2>Strategy and Management</h2>
     <p>
-      <img src="/assets/img/intro-concept.svg" alt="Concept" />
+      {% include services-strategy-icon.svg %}
       Not quite sure what you need? We’re here to help. Show us what you have, and we’ll chart a course that will get you closer to your goal.
       We provide structure, guidance and collaboration to drive your project from strategic, exploratory thinking through tactical implementation.</p>
     <h2>Development</h2>
     <p>
-      <img src="/assets/img/intro-development.svg" alt="Development" />
+      {% include services-development-icon.svg %}
       Right down to development, we know what it takes to build a wonderful product.
       With our experienced  developers, you can take advantage of our expertise to help you through user-interface challenges and subtle implementation details.
       Mobile, cloud, or desktop — we've got you covered.</p>
     <h2>Digital Marketing</h2>
     <p>
-      <img src="/assets/img/intro-marketing.svg" alt="Marketing" />
+      {% include services-branding-icon.svg %}
       We believe in creating lasting value for brands rather than disposable digital marketing. That means we focus on building products, experiences and platforms that have the power to transform a brand.
       We help add value to companies by designing clear corporate id, captivating websites and everthing you need to give visibility to your products.
       Through intuitive design we craft brands that communicate a businesses personality and values to get our clients noticed.
@@ -80,7 +81,21 @@ title: Hello
       </video>
     </div>
     <article>
-        <h1>Our Way to Success</h1>
-        <h2>When it comes to our development process,<br />we like to keep things simple.</h2>
+      <h1>Our Way to Success</h1>
+      <h2>When it comes to our development process,<br />we like to keep things simple.</h2>
+      <ul class="steps">
+        <li>
+          <div class="icon"><a>{% include process-analysis-icon.svg %}</a></div>
+        </li>
+        <li>
+          <div class="icon"><a>{% include process-design-icon.svg %}</a></div>
+        </li>
+        <li>
+          <div class="icon"><a>{% include process-development-icon.svg %}</a></div>
+        </li>
+        <li>
+          <div class="icon"><a>{% include process-deployment-icon.svg %}</a></div>
+        </li>
+      </ul>
     </article>
 </section>

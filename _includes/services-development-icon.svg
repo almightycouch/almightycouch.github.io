@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="335px" height="215px" viewBox="0 0 335 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
-    <title>Slice 2</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g id="services-development-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <path d="M90.408,159 C87.938,169.09 85.47,179.19 83,189.29 L152.144,189.29 C149.676,179.19 147.205,169.09 144.736,159 L90.408,159" id="Fill-513-2" fill="#B3B3B3" sketch:type="MSShapeGroup"></path>
         <path d="M156.271,189 L78.573,189 C76.6,189 75,190.88 75,193.2 L75,194.77 L159.843,194.77 L159.843,193.2 C159.843,190.88 158.243,189 156.271,189" id="Fill-514-2" fill="#CCCCCC" sketch:type="MSShapeGroup"></path>
         <path d="M0,148 L0,164.7 C0,167.91 2.601,170.51 5.816,170.51 L227.846,170.51 C231.057,170.51 233.664,167.91 233.664,164.7 L233.664,148 L0,148" id="Fill-515-2" fill="#CCCCCC" sketch:type="MSShapeGroup"></path>

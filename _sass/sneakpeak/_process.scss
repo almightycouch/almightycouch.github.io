@@ -47,5 +47,60 @@ section#process {
         border-bottom: 2px solid white;
       }
     }
+
+    ul.steps {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      -ms-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-left: 5px;
+      margin-right: 5px;
+      position: relative;
+      text-align: center;
+
+      li {
+        overflow-x: hidden;
+        width: 25%;
+
+        &:hover .icon {
+          background-color: rgba(255,255,255,0.5);
+        }
+
+        .icon {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          margin: 0 auto;
+          padding: 25px;
+          border: 3px solid white;
+          color: white;
+          border-radius: 50%;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 49px;
+            left: -100%;
+            width: 100%;
+            border-top: 3px solid white;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 49px;
+            right: -100%;
+            width: 100%;
+            border-top: 3px solid white;
+          }
+
+          svg {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
   }
 }

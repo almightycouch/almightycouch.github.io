@@ -1,17 +1,27 @@
-section#intro {
+section#services {
   @include grid-container;
 
   padding-top: 120px;
 
   article {
+    position: relative;
     padding: 0 35px;
+
+    &:first-of-type {
+      svg {
+        position: absolute;
+        right: 50px;
+        width: 150px;
+        height: auto;
+      }
+    }
 
     &:nth-child(2) {
       margin-bottom: 20px;
     }
 
     &:nth-child(4) {
-      img {
+      svg {
         float: right;
         width: 150px;
         height: auto;
@@ -74,7 +84,7 @@ section#intro {
           margin-left: -10px;
           padding-top: 3px;
           padding-left: 35px;
-          background: url("../img/intro-timeline-dot.png") no-repeat left 10px;
+          background: url("../img/services-timeline-dot.png") no-repeat left 10px;
           background-size: 15px 15px;
           font-weight: 500;
           font-size: 12px;
@@ -84,7 +94,7 @@ section#intro {
 
           &:hover {
             color: $color-active;
-            background-image: url("../img/intro-timeline-dot-active.png");
+            background-image: url("../img/services-timeline-dot-active.png");
           }
 
           p {
@@ -114,7 +124,7 @@ section#intro {
           width: 60px; height: 60px;
           top: -60px; left: -50px;
           content: "";
-          background-image: url("/assets/img/intro-timeline-history.svg");
+          background-image: url("/assets/img/services-timeline-history.svg");
         }
       }
 
