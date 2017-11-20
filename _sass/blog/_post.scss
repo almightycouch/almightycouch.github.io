@@ -4,14 +4,15 @@ article.post {
     text-align: center;
 
     h1 {
-      margin: 0;
-      font-size: 60px;
-      line-height: 64px;
-    }
-
-    p.meta {
-      font-size: 24px;
-      line-height: 32px;
+      max-width: 75%;
+      margin: 0 auto;
+      font-family: $font-family-sans-alt;
+      font-size: 36px;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: 0;
+      line-height: 52px;
+      -webkit-font-smoothing: antialiased;
     }
 
     hr {
@@ -24,10 +25,9 @@ article.post {
       position: relative;
       margin: 0;
       padding-bottom: 8px;
-      font-family: $font-family-freight;
-      color: $color-base2;
-      letter-spacing: 0;
+      font-weight: 700;
       text-transform: none;
+      color: $color-alt4;
 
       &:before {
         position: absolute;
@@ -41,45 +41,43 @@ article.post {
     h1 {
       padding-top: 48px;
       font-size: 32px;
-      font-weight: 700;
       letter-spacing: .8px;
       line-height: 40px;
+      -webkit-font-smoothing: antialiased;
       &:before {
         content: "#";
         font-family: $font-family-sans;
+        line-height: 50px;
       }
     }
 
     h2 {
       padding-top: 32px;
       font-size: 22px;
-      font-weight: 900;
-      -webkit-font-smoothing: antialiased;
       letter-spacing: 1px;
       line-height: 32px;
       &:before {
         content: "##";
-        font-weight: 700;
         font-family: $font-family-sans;
+        line-height: 40px;
       }
     }
 
     h3 {
       padding-top: 8px;
       font-size: 16px;
-      font-weight: 900;
       letter-spacing: .8px;
       line-height: 24px;
       &:before {
         content: "###";
-        font-weight: 700;
         font-family: $font-family-sans;
+        line-height: 28px;
       }
     }
 
     img {
       display: block;
-      max-width:100%;
+      max-width: 100%;
       padding: 30px 0;
       margin-left: auto;
       margin-right: auto;

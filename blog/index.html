@@ -6,6 +6,7 @@ title: Blog
 {% for post in site.posts %}
   <li>
     <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <p class="summary">{{ post.summary }}</p>
     <p class="meta">
       <a href="{{ post.author_href }}" class="author">{{ post.author }}</a>
       <time>{{ post.date | date: "%b %-d, %Y" }}</time>

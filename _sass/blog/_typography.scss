@@ -5,6 +5,8 @@
 
   .meta {
     font-family: $font-family-freight;
+    font-size: 18px;
+    line-height: 20px;
     color: $color-base2;
 
     a.author {
@@ -14,6 +16,7 @@
 
     time {
       font-family: $font-family-sans-alt;
+      letter-spacing: 0;
 
       &:before {
         margin: 0 0.6rem;

@@ -10,16 +10,25 @@ ul.posts {
     }
 
     h2 {
-      font-size: 38px;
       margin: 20px 0 0;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: $font-family-sans-alt;
+      text-transform: none;
+      letter-spacing: 0;
       a {
         color: $color-base;
       }
     }
 
-    p.meta {
-      font-size: 22px;
-      line-height: 28px;
+    p.summary {
+      font-family: $font-family-freight;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 22px;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: .6px;
+      color: $color-base2;
     }
   }
 }
