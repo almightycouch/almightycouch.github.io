@@ -12,22 +12,14 @@ body > header {
     position: relative;
     height: 100vmin;
     margin-bottom: -60px;
-    background: #249bd6;
-    background: linear-gradient(110deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15)), linear-gradient(to top left, #49c3c9, #249bd6 50%, #0c5b9c);
-    background-blend-mode: soft-light;
+    background-image: url(/assets/img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
 
     figure {
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 5px;
+      top: 150px; left: 0; right: 0; bottom: 5px;
       margin: 0;
-      @include grid-media($medium-screen-grid) {
-        background-image: url(/assets/img/hero-teaser.svg);
-        background-size: 2760px auto;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-      justify-content: center;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -39,8 +31,9 @@ body > header {
       }
 
       figcaption {
+        margin-top: 80px;
         font-family: "Alex Brush";
-        font-size: 80px;
+        font-size: 120px;
         color: white;
         text-align: center;
       }
