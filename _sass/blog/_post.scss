@@ -27,7 +27,6 @@ article.post {
       padding-bottom: 8px;
       font-weight: 700;
       text-transform: none;
-      color: $color-alt4;
 
       &:before {
         position: absolute;
@@ -53,7 +52,7 @@ article.post {
 
     h2 {
       padding-top: 32px;
-      font-size: 22px;
+      font-size: 24px;
       letter-spacing: 1px;
       line-height: 32px;
       &:before {
@@ -65,7 +64,7 @@ article.post {
 
     h3 {
       padding-top: 8px;
-      font-size: 16px;
+      font-size: 20px;
       letter-spacing: .8px;
       line-height: 24px;
       &:before {

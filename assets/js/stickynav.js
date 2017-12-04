@@ -25,7 +25,7 @@ var sticky = {
       this.element.classList.remove("sticky");
       this.element.classList.remove("opaque");
       this.parent.style["marginBottom"] = "0";
-      this.figure.style.backgroundPosition = "center -" + window.scrollY * 1.25 + "px";
+      //this.figure.style.backgroundPosition = "center -" + window.scrollY * 1.25 + "px";
     }
     this.navmenu.querySelectorAll("li").forEach(function(menuItem) {
       var href = menuItem.querySelector("a").getAttribute("href");

@@ -9,20 +9,20 @@ section#process {
     left: 0; right: 0;
     background-image: url(../img/process-bg.jpg);
     background-size: cover;
+    overflow-x: hidden;
 
     &:after {
       content: "";
       position: absolute;
       width: 100%; height: 100%;
-      background: linear-gradient(160deg, rgba(36, 174, 214, 0.3), rgba(9, 128, 171, 0.1));
+      background: linear-gradient(160deg, rgba(36, 174, 214, 0.8), rgba(9, 128, 171, 0.4));
     }
 
     video {
       position: absolute;
-      max-height: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -51,8 +51,6 @@ section#process {
     ul.steps {
       display: -ms-flexbox;
       display: -webkit-flex;
-      -ms-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
       margin-left: 5px;
       margin-right: 5px;

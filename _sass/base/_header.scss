@@ -12,7 +12,9 @@ body > header {
     position: relative;
     height: 100vmin;
     margin-bottom: -60px;
-    background: linear-gradient(160deg, rgba(36, 174, 214, 0.9), rgba(9, 128, 171, 0.6));
+    background: #249bd6;
+    background: linear-gradient(110deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15)), linear-gradient(to top left, #49c3c9, #249bd6 50%, #0c5b9c);
+    background-blend-mode: soft-light;
 
     figure {
       position: absolute;
@@ -108,7 +110,7 @@ body > header {
           height: 55px;
           padding: 0 10px;
           font-family: $font-family-sans-alt;
-          font-weight: 500;
+          font-weight: 900;
           text-transform: uppercase;
 
           a {
@@ -119,7 +121,6 @@ body > header {
         }
 
         &[role=navigation] li.active {
-          font-weight: 900;
           border-bottom: 5px solid white;
         }
 
@@ -147,7 +148,7 @@ body > header {
 
             &.active {
               a i {
-                background-color: $color-alt2;
+                background-color: $color-alt;
               }
             }
           }
