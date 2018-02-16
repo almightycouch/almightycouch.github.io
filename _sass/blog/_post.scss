@@ -8,7 +8,7 @@ article.post {
       margin: 0 auto;
       font-family: $font-family-sans-alt;
       font-size: 36px;
-      font-weight: 700;
+      font-weight: 900;
       text-transform: none;
       letter-spacing: 0;
       line-height: 52px;
@@ -25,7 +25,8 @@ article.post {
       position: relative;
       margin: 0;
       padding-bottom: 8px;
-      font-weight: 700;
+      color: #666;
+      font-weight: 900;
       text-transform: none;
 
       &:before {
@@ -117,30 +118,32 @@ article.post {
       font-size: 14px;
       font-style: normal;
       line-height: 24px;
-    }
 
-    .highlight {
-      margin-left: -50px;
-      border: 1px solid $color-alt2;
-      overflow-y: hidden;
+      pre.highlight {
+        margin-left: -50px;
+        border: 1px solid $color-alt2;
+        overflow-y: hidden;
 
-      table {
-        width: 100%;
+        table.rouge-table {
+          width: 100%;
+          border-collapse: collapse;
 
-        tr td {
-          &.gutter {
-            padding: 0 15px;
-            border-right: 1px solid $color-alt2;
-            pre {
-              width: 18px;
+          tr td {
+            &.rouge-gutter {
+              padding: 0 15px;
+              border-right: 1px solid $color-alt2;
+              pre {
+                width: 18px;
+                text-align: right;
+              }
             }
-          }
 
-          &.code {
-            width: 100%;
-            padding: 0 10px;
-            background-color: $color-alt3;
-            overflow-y: hidden;
+            &.rouge-code {
+              width: 100%;
+              padding: 0 10px;
+              background-color: $color-alt3;
+              overflow-y: hidden;
+            }
           }
         }
       }

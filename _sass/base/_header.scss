@@ -13,7 +13,7 @@ body > header {
     height: 100vmin;
     margin-bottom: -60px;
     background: #249bd6;
-    background: linear-gradient(110deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15)), linear-gradient(to top left, #49c3c9, #249bd6 50%, #0c5b9c);
+    background: radial-gradient(#05a8d6, #1b83a5);
     background-blend-mode: soft-light;
 
     figure {
@@ -110,7 +110,7 @@ body > header {
           height: 55px;
           padding: 0 10px;
           font-family: $font-family-sans-alt;
-          font-weight: 900;
+          font-weight: 500;
           text-transform: uppercase;
 
           a {
@@ -121,6 +121,7 @@ body > header {
         }
 
         &[role=navigation] li.active {
+          font-weight: 900;
           border-bottom: 5px solid white;
         }
 
