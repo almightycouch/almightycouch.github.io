@@ -1,5 +1,5 @@
-var nav = document.querySelector("nav");
-var sticky = {
+let nav = document.querySelector("nav");
+let sticky = {
   element: nav,
   offset: nav.offsetTop,
   init: function() {
@@ -28,12 +28,12 @@ var sticky = {
       //this.figure.style.backgroundPosition = "center -" + window.scrollY * 1.25 + "px";
     }
     this.navmenu.querySelectorAll("li").forEach(function(menuItem) {
-      var href = menuItem.querySelector("a").getAttribute("href");
-      var innerPos = href.indexOf("#");
+      let href = menuItem.querySelector("a").getAttribute("href");
+      let innerPos = href.indexOf("#");
       if(innerPos != -1) {
-        var target = document.querySelector(href.substring(innerPos));
+        let target = document.querySelector(href.substring(innerPos));
         if(target != null) {
-          var offset = window.scrollY + window.innerHeight;
+          let offset = window.scrollY + window.innerHeight;
           if(target.offsetTop < offset && target.offsetTop + target.offsetHeight >= offset) {
             menuItem.classList.add("active");
           } else {
@@ -50,3 +50,13 @@ var sticky = {
 };
 
 document.addEventListener("DOMContentLoaded", sticky.init.bind(sticky));
+
+let steps = document.getElementById("process").getElementsByClassName("steps")[0];
+steps.childNodes.forEach(function(step) {
+  step.addEventListener("mouseenter", function() {
+    for(let activeStep of steps.getElementsByClassName("active")) {
+      activeStep.classList.remove("active");
+    }
+    this.classList.add("active");
+  });
+});

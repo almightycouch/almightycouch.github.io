@@ -49,23 +49,41 @@ section#process {
     }
 
     ul.steps {
+      position: relative;
       display: -ms-flexbox;
       display: -webkit-flex;
       flex-wrap: wrap;
       margin-left: 5px;
       margin-right: 5px;
-      position: relative;
+      padding: 0;
       text-align: center;
+
+      &:not(:hover) li.active {
+        .icon {
+          background-color: rgba(255,255,255,0.5);
+        }
+
+        .info {
+          display: block;
+        }
+      }
 
       li {
         overflow-x: hidden;
         width: 25%;
 
-        &:hover .icon {
-          background-color: rgba(255,255,255,0.5);
+        &:hover {
+          .icon {
+            background-color: rgba(255,255,255,0.5);
+          }
+
+          .info {
+            display: block;
+          }
         }
 
         .icon {
+          display: block;
           position: relative;
           width: 50px;
           height: 50px;
@@ -74,6 +92,7 @@ section#process {
           border: 3px solid white;
           color: white;
           border-radius: 50%;
+          cursor: pointer;
 
           &:before {
             content: "";
@@ -96,6 +115,15 @@ section#process {
           svg {
             width: 100%;
             height: auto;
+          }
+        }
+
+        .info {
+          display: none;
+          min-height: 240px;
+
+          p {
+            text-align: center;
           }
         }
       }
