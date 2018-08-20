@@ -1,0 +1,24 @@
+section#work {
+  @include grid-container;
+
+  min-height: 400px;
+
+  position: relative;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-top: 60px;
+  background: url(../img/work-map.png) center 60px no-repeat;
+
+  .head {
+    h1, h2 {
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+    }
+
+    h2 {
+      color: #999;
+    }
+  }
+}
