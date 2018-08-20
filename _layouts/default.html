@@ -5,6 +5,11 @@
     {% include header.html %}
     <div class="wrapper">{{ content }}</div>
     {% include footer.html %}
-    <script src="/assets/js/stickynav.js"></script>
+    <script src="/assets/js/stickynav.js" type="text/javascript"></script>
+    {% if page.js_assets %}
+      {% for js_file in page.js_assets %}
+        <script src="/assets/js/{{ js_file }}.js" type="text/javascript"></script>
+      {% endfor %}
+    {% endif %}
   </body>
 </html>

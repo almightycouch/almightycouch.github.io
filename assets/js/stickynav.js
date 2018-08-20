@@ -11,7 +11,6 @@ let sticky = {
       this.listen();
     }
   },
-
   scroll: function() {
     if(window.scrollY >= this.offset + this.element.offsetHeight) {
       this.element.classList.add("sticky");
@@ -43,20 +42,9 @@ let sticky = {
       }
     })
   },
-
   listen: function() {
     window.addEventListener("scroll", this.scroll.bind(this));
   }
 };
 
 document.addEventListener("DOMContentLoaded", sticky.init.bind(sticky));
-
-let steps = document.getElementById("process").getElementsByClassName("steps")[0];
-steps.childNodes.forEach(function(step) {
-  step.addEventListener("mouseenter", function() {
-    for(let activeStep of steps.getElementsByClassName("active")) {
-      activeStep.classList.remove("active");
-    }
-    this.classList.add("active");
-  });
-});
