@@ -32,7 +32,7 @@ let sticky = {
       if(innerPos != -1) {
         let target = document.querySelector(href.substring(innerPos));
         if(target != null) {
-          let offset = window.scrollY + window.innerHeight;
+          let offset = window.scrollY + window.innerHeight - (screen.height / 2);
           if(target.offsetTop < offset && target.offsetTop + target.offsetHeight >= offset) {
             menuItem.classList.add("active");
           } else {
