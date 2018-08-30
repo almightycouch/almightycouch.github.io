@@ -47,6 +47,7 @@ The library is written in modern C++ and should be platform agnostic. Altought i
 
 To keep close to the original Meteor JavaScript API, Meteor++ requires [C++11][] features such as [anonymous functions](http://en.cppreference.com/w/cpp/language/lambda) (*aka.* closures), [list initialization](http://en.cppreference.com/w/cpp/language/list_initialization) and [variadic templates](http://en.cppreference.com/w/cpp/language/parameter_pack).
 
+{% raw %}
 ```cpp
 auto ddp = std::make_shared<meteorpp::ddp>(io);
 ddp->connect("ws://localhost:3000/websocket", [&](std::string const& id) {
@@ -65,6 +66,7 @@ ddp->connect("ws://localhost:3000/websocket", [&](std::string const& id) {
     });
 });
 ```
+{% endraw %}
 
 Though it's 2015 already, the support for C++11 is still a bit sparse. Do not forget to set the necessary switches (*e.g.*, `-std=c++11` for GCC and Clang).
 
