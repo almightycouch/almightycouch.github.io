@@ -1,0 +1,123 @@
+section#contact {
+  @include grid-container;
+
+  position: absolute;
+  left: 0; right: 0;
+  background-color: #0980ab;
+
+  color: white;
+
+  .container {
+    padding: 60px 0;
+
+    article {
+      @include grid-column(6);
+
+      h1, h2 {
+        text-align: left;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      ul {
+        margin-top: 60px;
+        padding-left: 60px;
+        font-size: 18px;
+
+        li {
+          list-style: none;
+          margin: 20px 0;
+
+          &.icon {
+            &:before {
+              background-color: white;
+              margin: 10px 0 10px -60px;
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              content: "";
+              -webkit-mask-size: 40px;
+            }
+
+            &.email {
+              &:before {
+                -webkit-mask-image: url(/assets/img/icon-email.svg);
+              }
+            }
+
+            &.github {
+              &:before {
+                -webkit-mask-image: url(/assets/img/icon-github.svg);
+              }
+            }
+          }
+
+          strong {
+            font-family: $font-family-sans-alt;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+
+          a {
+            display: block;
+            color: #a5cede;
+          }
+        }
+      }
+    }
+
+    aside {
+      @include grid-column(6);
+
+      padding-top: 72px;
+      padding-bottom: 60px;
+
+      form {
+        padding: 20px;
+        color: #444;
+        background-color: white;
+        border-radius: 4px;
+
+        .form-entry {
+          display: flex;
+          flex-direction: column;
+          justify-content: stretch;
+
+          margin: 20px 0;
+
+          label {
+            text-transform: uppercase;
+            font-family: $font-family-sans-alt;
+            font-weight: 900;
+            padding-bottom: 8px;
+          }
+
+          input, textarea {
+            line-height: 32px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          }
+
+        }
+
+        hr {
+          margin: 30px 0 40px 0;
+        }
+
+        button {
+          line-height: 32px;
+          background-color: #0980ab;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-family: $font-family-sans-alt;
+          font-weight: 900;
+          padding: 5px 20px;
+          color: white;
+          border: none;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+

@@ -122,9 +122,10 @@ section#services {
         &:before {
           position: absolute;
           width: 60px; height: 60px;
-          top: -60px; left: -50px;
+          top: -60px; left: -15px;
           content: "";
           background-image: url("/assets/img/services-timeline-history.svg");
+          transform: scaleX(-1);
         }
       }
 

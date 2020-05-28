@@ -75,52 +75,104 @@ js_assets: ['sneakpeak']
   </aside>
 </section>
 <section class="sneakpeek" id="process">
-    <div class="vidcontainer">
-      <video autoplay="" loop="" muted="">
-        <source src="/assets/vid/process-bg.mp4" type="video/mp4">
+  <div class="vidcontainer">
+    <video autoplay="" loop="" muted="">
+      <source src="/assets/vid/process-bg.mp4" type="video/mp4">
         <source src="/assets/vid/process-bg.webm" type="video/webm">
-      </video>
+    </video>
+  </div>
+  <article>
+    <h1>Our Way to Success</h1>
+    <h2>When it comes to our development process,<br />we like to keep things simple.</h2>
+    <ul class="steps">
+      <li class="active">
+        <div class="icon"><a>{% include process-analysis-icon.svg %}</a></div>
+        <div class="info">
+          <h4>Analysis</h4>
+          <p>We identify the intersection of what a user wants and what your business provides.</p>
+        </div>
+      </li>
+      <li>
+        <div class="icon"><a>{% include process-design-icon.svg %}</a></div>
+        <div class="info">
+          <h4>Design</h4>
+          <p>We use continuous qualitative research, experimentation, and design thinking to meet business and user challenges.</p>
+        </div>
+      </li>
+      <li>
+        <div class="icon"><a>{% include process-development-icon.svg %}</a></div>
+        <div class="info">
+          <h4>Development</h4>
+          <p>We build your product the right way from the start, saving you money in the long run.</p>
+        </div>
+      </li>
+      <li>
+        <div class="icon"><a>{% include process-deployment-icon.svg %}</a></div>
+        <div class="info">
+          <h4>Deployment</h4>
+          <p>We go the extra mile to make sure every product ships and meets our high personal standards.</p>
+        </div>
+      </li>
+    </ul>
+  </article>
+</section>
+<section class="sneakpeek" id="work">
+  <article>
+    <div class="head">
+      <h1>A Sneak Peek of our Work</h1>
+      <h2>You're in good company with us.</h2>
     </div>
+    <div class="tiles"></div>
+    <div class="more">
+      <p>You can find more of our own open source projects on <a href="https://github.com/almightycouch">GitHub</a>.</p>
+    </div>
+  </article>
+</section>
+<section class="sneakpeek" id="contact">
+  <div class="container">
     <article>
-      <h1>Our Way to Success</h1>
-      <h2>When it comes to our development process,<br />we like to keep things simple.</h2>
-      <ul class="steps">
-        <li class="active">
-          <div class="icon"><a>{% include process-analysis-icon.svg %}</a></div>
-          <div class="info">
-            <h4>Analysis</h4>
-            <p>We identify the intersection of what a user wants and what your business provides.</p>
-          </div>
+      <h1>Get in touch</h1>
+      <h2>We'd love to hear from you.</h2>
+      <p>Whatever your ambition, we would love to hear about your ideas and help you get started or lend a hand on an existing one.</p>
+      <ul>
+        <li class="icon email">
+          <strong>Email</strong>
+          <a href="mailto:hello@almightycouch.com">hello@almightycouch.com</a>
         </li>
-        <li>
-          <div class="icon"><a>{% include process-design-icon.svg %}</a></div>
-          <div class="info">
-            <h4>Design</h4>
-            <p>We use continuous qualitative research, experimentation, and design thinking to meet business and user challenges.</p>
-          </div>
-        </li>
-        <li>
-          <div class="icon"><a>{% include process-development-icon.svg %}</a></div>
-          <div class="info">
-            <h4>Development</h4>
-            <p>We build your product the right way from the start, saving you money in the long run.</p>
-          </div>
-        </li>
-        <li>
-          <div class="icon"><a>{% include process-deployment-icon.svg %}</a></div>
-          <div class="info">
-            <h4>Deployment</h4>
-            <p>We go the extra mile to make sure every product ships and meets our high personal standards.</p>
-          </div>
+        <li class="icon github">
+          <strong>GitHub</strong>
+          <a href="https://github.com/almightycouch">@almightycouch</a>
         </li>
       </ul>
     </article>
-</section>
-<section class="sneakpeek" id="work">
-    <article>
-      <div class="head">
-        <h1>A Sneak Peek of our Work</h1>
-        <h2>You're in good company with us.</h2>
-      </div>
-    </article>
+    <aside>
+      <form action="https://getform.io/f/b06c87c9-33f9-422d-9c7c-dbc3216fec26" method="POST">
+        <div class="form-entry">
+          <label for="contact_name">Your name</label>
+          <input id="contact_name" type="text" name="name" required>
+        </div>
+
+        <div class="form-entry">
+          <label for="contact_email">Your e-mail</label>
+          <input id="contact_email" type="email" name="email" required>
+        </div>
+
+        <div class="form-entry">
+          <label for="contact_company">Your company</label>
+          <input id="contact_company" type="text" name="company" required>
+        </div>
+
+        <div class="form-entry">
+          <label for="contact_message">Message</label>
+          <textarea id="contact_message" rows="2" maxlength="500" name="message" required></textarea>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6Lc3X_wUAAAAAGjebrGvuwK-iBWINjhe_7CdvQtk"></div>
+
+        <hr />
+
+        <button type="submit">Send message</button>
+      </form>
+    </aside>
+  </div>
 </section>

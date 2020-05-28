@@ -1,12 +1,18 @@
-.wrapper {
+.grecaptcha-badge {
+  opacity:0;
+}
+
+.wrapper,.container {
   margin-left: auto;
   margin-right: auto;
 }
 
 @include grid-media($medium-screen-grid) {
   .wrapper { max-width: $medium-screen-size; }
+  .container { max-width: $medium-screen-size; }
 }
 
 @include grid-media($large-screen-grid) {
   .wrapper { max-width: $large-screen-size; }
+  .container { max-width: $large-screen-size; }
 }
