@@ -5,8 +5,8 @@
     {% include header.html %}
     <div class="wrapper">{{ content }}</div>
     {% include footer.html %}
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lc3X_wUAAAAAGjebrGvuwK-iBWINjhe_7CdvQtk"></script>
     <script src="/assets/js/stickynav.js" type="text/javascript"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     {% if page.js_assets %}
       {% for js_file in page.js_assets %}
         <script src="/assets/js/{{ js_file }}.js" type="text/javascript"></script>
