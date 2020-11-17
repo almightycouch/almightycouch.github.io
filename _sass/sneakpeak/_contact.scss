@@ -22,7 +22,7 @@ section#contact {
       ul {
         margin-top: 60px;
         padding-left: 60px;
-        font-size: 18px;
+        font: 18px $font-family-sans-alt;
 
         li {
           list-style: none;
@@ -69,8 +69,8 @@ section#contact {
     aside {
       @include grid-column(6);
 
-      padding-top: 72px;
-      padding-bottom: 60px;
+      margin-left: 40px;
+      margin-bottom: 60px;
 
       form {
         padding: 20px;
