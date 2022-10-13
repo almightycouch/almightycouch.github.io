@@ -146,25 +146,34 @@ body > header {
           li {
             position: relative;
 
-            a i {
-              display: inline-block;
-              width: 30px; height: 30px;
-              margin: 15px 0 15px 0;
-              background-color: white;
+            a {
+              display: flex;
 
-              &.icon-blog {
-                -webkit-mask-image: url(/assets/img/icon-blog.svg);
-                -webkit-mask-size: 30px;
-              }
-              &.icon-github {
-                -webkit-mask-image: url(/assets/img/icon-github.svg);
-                -webkit-mask-size: 30px;
+              i {
+                display: inline-block;
+                width: 30px; height: 30px;
+                margin: 15px 5px 15px 0;
+                background-color: white;
+
+                &.icon-blog {
+                  -webkit-mask-image: url(/assets/img/icon-blog.svg);
+                  -webkit-mask-size: 30px;
+                }
+                &.icon-github {
+                  -webkit-mask-image: url(/assets/img/icon-github.svg);
+                  -webkit-mask-size: 30px;
+                }
               }
             }
 
             &.active {
-              a i {
-                background-color: $color-alt;
+              a {
+                color: $color-active;
+                font-weight: 900;
+
+                i {
+                  background-color: $color-alt;
+                }
               }
             }
           }

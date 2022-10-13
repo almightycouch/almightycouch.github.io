@@ -9,8 +9,10 @@ description: >
 
 shortcuts:
   - icon: blog
+    name: Blog
     href: /blog/
   - icon: github
+    name: GitHub
     href: https://github.com/almightycouch
 
 # Permalink for blog posts

@@ -16,7 +16,9 @@
         {% for link in site.shortcuts %}
           {% assign size = link.href | size %}
           {% assign base = page.url | slice: 0, size %}
-          <li{% if link.href == base %} class="active"{% endif %}><a href="{{ link.href }}"><i class="icon-{{ link.icon }}"></i></a></li>
+          <li{% if link.href == base %} class="active"{% endif %}>
+              <a href="{{ link.href }}"><i class="icon-{{ link.icon }}"></i>&nbsp;{{ link.name }}</a>
+          </li>
         {% endfor %}
       </ul>
       <ul role="navigation">
